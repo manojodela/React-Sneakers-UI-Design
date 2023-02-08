@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import AxiosRequest from './AxiosRequest';
+import Success from './components/Success';
+import FetchRequest from './FetchRequest';
+import Layout from './pages/Layout';
+import ProductPage from './pages/ProductPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<ProductPage />} />
+            <Route path='/success' element={<Success />} />
+            <Route path='/axios' element={<AxiosRequest />} />
+            <Route path='/fetch' element={<FetchRequest />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
