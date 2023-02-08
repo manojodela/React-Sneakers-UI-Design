@@ -22,8 +22,8 @@ const MainNav = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className='text-black'>
                     <Nav className="me-auto">
-                        <Link to="/" className="nav-item">Collections</Link>
-                        <Link to="/" className="nav-item">Men</Link>
+                        <Link to="/axios" className="nav-item">Collections</Link>
+                        <Link to="/fetch" className="nav-item">Men</Link>
                         <Link to="/" className="nav-item">Women</Link>
                         <Link to="/" className="nav-item">About</Link>
                         <Link to="/" className="nav-item">Contact</Link>
