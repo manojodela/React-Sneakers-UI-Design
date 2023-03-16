@@ -17,12 +17,12 @@ body {
   text-decoration: none;
   color: black;
   font-family: 'Kumbh Sans', sans-serif;
+  width: fit-content;
 }
 
 .nav-item:hover {
   color: black;
   height: 50px;
-  width: 50%;
   margin: auto;
   border-bottom: 2px solid hsl(26, 100%, 55%);
 }
