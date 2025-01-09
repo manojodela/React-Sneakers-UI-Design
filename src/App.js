@@ -9,7 +9,7 @@ import Layout from './pages/Layout';
 import ProductPage from './pages/ProductPage';
 
 function App() {
-  return (
+  return ( 
     <div className='App'>
       <BrowserRouter>
         <Layout>
