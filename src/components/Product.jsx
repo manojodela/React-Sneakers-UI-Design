@@ -50,7 +50,7 @@ const Product = () => {
                     <Row>
                         {images.map((image, index) => (
                             <Col lg={3} xs={3} className="p-3" key={index} id="myDIV">
-                                <img src={image} alt="product" className={`img-fluid rounded-3 ${selected === index ? "border-org" : "" }`} 
+                                <img src={image} alt="product" className={`img-fluid rounded-3 cursor-auto ${selected === index ? "border-org" : "" }`} 
                                     onClick={() => imageHandler(image, index)} /> 
                             </Col>
                         ))}
